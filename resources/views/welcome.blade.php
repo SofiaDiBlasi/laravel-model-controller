@@ -7,7 +7,11 @@
         <div class="col">
             <div>
                 @foreach ($movie as $film)
-                    {{ $film['title'] }}
+                <div class="film-card card">
+                   <h1>{{ $film->title }}</h1>
+                   <h3>{{ $film->original_title }}</h3>
+                   <p>{{ $film->vote }}</p>
+                </div>
                 @endforeach
             </div>
         </div>
